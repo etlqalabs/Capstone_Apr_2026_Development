@@ -1,1 +1,5 @@
-1. Implement the data extrcation method for sales_data
+# Day 1:
+1. Implement the data extrcation method for sales_data => Done
+
+# Day 2:
+1. Implement the generic read_write function for the remaing files , Refer the code for product data file
