@@ -2,6 +2,7 @@ import pandas as pd
 import cx_Oracle
 from sqlalchemy import create_engine
 import logging
+from project_configuration.etl_config import *
 
 from common_utilities.utilities import read_file_and_write_to_database, download_file_from_linux_server, \
     read_database_and_write_to_database
@@ -17,8 +18,9 @@ logger = logging.getLogger(__name__)
 
 # Database connections
 
-mysql_conn = create_engine("mysql+pymysql://root:Admin%40143@localhost:3308/retail_dwh_apr_2026")
-oracle_conn = create_engine("oracle+cx_oracle://system:admin@localhost:1521/xe")
+oracle_conn = create_engine(f"oracle+cx_oracle://{ORACLE_USER}:{ORACLE_PASSWORD}@{ORACLE_HOST}:{ORACLE_PORT}/{ORACLE_SERVICE}")
+mysql_conn = create_engine(F"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}")
+
 
 
 class DataTransformation:

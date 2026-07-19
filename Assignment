@@ -1,5 +1,11 @@
 # Day 1:
 1. Implement the data extrcation method for sales_data => Done
 
+
 # Day 2:
 1. Implement the generic read_write function for the remaing files , Refer the code for product data file
+
+
+# Day 3:
+1. Create a wrapper script named "retaildwh_etl_job" to call extraction, transformation and loading etl scripts in sequence.
+2. Implement the exception handling for data loading module

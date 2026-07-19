@@ -1,3 +1,22 @@
+# Oracle database
+ORACLE_USER = "system"
+ORACLE_PASSWORD = "admin"
+ORACLE_HOST = "localhost"
+ORACLE_PORT = 1521
+ORACLE_SERVICE = "xe"
+
+
+# mySQL database
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "Admin%40143"
+MYSQL_HOST = "localhost"
+MYSQL_PORT = 3308
+MYSQL_DATABASE = "retail_dwh_apr_2026"
+
+
+# AWS details
+
+
 
 #Linux server details
 LINUX_HOSTNAME = "192.168.0.6"
